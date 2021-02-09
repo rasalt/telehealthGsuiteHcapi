@@ -1,0 +1,21 @@
+resourceType: "Patient"
+name[]: nameInfo($root)
+gender: $root.sex
+birthDate: $root.dob
+
+
+def addressInfo(body) {
+ city: body.addrcity
+ line[]: body.addstreet
+ text: body.addrstreet
+ state: body.addrstate
+ period[]: body.addrstart
+ postalCode: body.addrzip
+ use:  body.addruse
+}
+
+def nameInfo(body) {
+ family: body.lname
+ given[]: body.fname
+ use: "official"
+}

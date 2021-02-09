@@ -1,0 +1,21 @@
+<form method=post action="">
+<title>The Good RK Health Clinic</title>
+<h1>The Good RK Health Clinic</h1>
+<p>This App lets you create a new patient/enter info for an existing patient or update info for an existing patient!</p>
+<table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.name }}</td><td>{{ field }}</td>
+    <td>{{ field.label }}</td>
+    </tr>
+  {% endfor %}
+</table>
+<p><input type=submit value=Submit></form></p>
+
+<p>
+{% if result != None %}
+   <tr>
+     {{ result }}
+   </tr>
+{% endif %}
+</p>
