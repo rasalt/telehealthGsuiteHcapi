@@ -1,0 +1,15 @@
+#This is a very simple example and for the simplicity of illustration, the emergency information is ignored
+{ resourceType: 'Patient',
+  address: 
+   [ { city: 'Chicago',
+       line: [Object],
+       period: [Object],
+       postalCode: '60656',
+       state: 'IL',
+       text: '60656, IL, 001 East Washington Street',
+       use: 'Home' } ],
+  name: [ { family: 'Smith', given: [Object], use: 'official' } ],
+  gender: 'Male',
+  birthDate: '1981-05-25' }
+
+
